@@ -1,2 +1,2 @@
 # adrian
-buenas tadres inge 
+soy adrian alanoca de biomedica
