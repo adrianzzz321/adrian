@@ -1,0 +1,6 @@
+COMO DESCOMPRIMIR.-bueno, primero descargue el archivo y revisar que no tiene los permisos suficientes para abrir y ver lo que tiene entonces utilice el chmod 777 para hacerlo mas facil y ya entre dentro del archivo  
+1.- utilice el numero de permiso 640 por que el primero digito (6) da permiso de lectura y escritura (4+2) para el propietario, el segundo digito (4) da permiso para el grupo para que solo lea (4) y para otros directamente 0 para uqe no tengan permisos a nada
+2.- esta vez cree el archivo con nano para que se abra directamente y una vez abierto utilize echo para que mande el mensaje y despues con read pueda leer el dato que despues quiero que se coloque y despues con 711 hice que "El propietario puede leer, escribir y ejecutar.
+El grupo y otros usuarios pueden solo ejecutarlo." utilizando el chmod 711 script.sh
+3.- esta vez solo utilice el chmod 600 para que solo el propietario tenga los permisos apa leer y escribir 
+4.- utilice chmod 400 secret.key para que el propietario pueda utilizarlo
