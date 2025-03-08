@@ -1,0 +1,10 @@
+1.- elegi 644 por que 2(permiso de escribir)+4(permiso de leer)y los coloque 
+2.- elegi 700 por que 2(permiso de escribri)+4(permiso de leer)+1(permiso de ejecutar)
+3.- elegi 666 por 4+2
+4.- elegi 600 por 4+2
+5.- elegi 644 4+2=6 
+6.- elegi 400 por que con 4 se puede leer
+7.- elegi 100 por que 1 es ejecucion
+8.- elegi 666 por que 4+2
+9,- elegi 311 por que todos pueden ejecutar pero el dueño puede modificarlo
+10.-elegi 640 por que 4+2 
