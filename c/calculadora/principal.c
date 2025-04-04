@@ -5,34 +5,42 @@
 #define MSJ2 "ingrese el segundo numero"
 
 
-int main(void)
-{
+int main(void){
     saludo();
     int opcion=0;
     int a,b;
+    char signo;
     for (;;){
         printf(MENU);
         scanf("%d",&opcion);
         if (opcion == 1)
         {
-            a,b=obtener_datos();
+          a=obtener_datosa(a);
+          b=obtener_datosb(b);
             int resultado=suma(a,b);
-            printf("la suma es ; %d\n",resultado);
+            signo='+';
+            printf(menucalculadora(a,signo,b,resultado));
         }else if (opcion == 2)
         {
-            a,b=obtener_datos();
+            a=obtener_datosa(a);
+            b=obtener_datosb(b);
             int resultado=resta(a,b);
-            printf("la resta es ; %d\n",resultado);
+            signo='-';
+            printf(menucalculadora(a,signo,b,resultado));
         }else if (opcion == 3)
         {
-            a,b=obtener_datos();
+            a=obtener_datosa(a);
+            b=obtener_datosb(b);
             int resultado=multiplicacion(a,b);
-            printf("la multiplicacion es ; %d\n",resultado);
+            signo='x';
+            printf(menucalculadora(a,signo,b,resultado));
         }else if (opcion == 4)
         {
-            a,b=obtener_datos();
+            a=obtener_datosa(a);
+            b=obtener_datosb(b);
             int resultado=division(a,b);
-            printf("la division es : %d\n",resultado);
+            signo='/';
+            printf(menucalculadora(a,signo,b,resultado));
         } 
     }
     return 0;

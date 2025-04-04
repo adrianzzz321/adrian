@@ -15,13 +15,24 @@ int multiplicacion( int numero5, int numero6){
 int division( int numero7, int numero8){
     int respuesta4 = numero7/numero8;
     return respuesta4;
-}int obtener_datos(){
-    int a=0;
-    int b=0;
+}
+int obtener_datosa(int a){
     printf ("ingre el primero numero\n");
     scanf("%d",&a);
+    return a;
+}
+int obtener_datosb(int b){
     printf ("ingre el segundo numero\n");
     scanf("%d",&b);
-    return a,b;
-
+    return b; 
+}
+int menucalculadora(int a,char signo,int b,int resultado){
+    printf("----------------\n");
+    printf("| calculadora  |\n");
+    printf("|              |\n");
+    printf("|  %d %c %d = %d   |\n",a,signo,b,resultado);
+    printf("|              |\n");
+    printf("|              |\n");
+    printf("----------------\n");
+    return 0;
 }
