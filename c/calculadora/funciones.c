@@ -17,20 +17,34 @@ int division( int numero7, int numero8){
     return respuesta4;
 }
 int obtener_datosa(int a){
-    printf ("ingre el primero numero\n");
+    printf("----------------\n");
+    printf("| calculadora  |\n");
+    printf("|              |\n");
+    printf("|  ");
     scanf("%d",&a);
+    printf("|              |\n");
+    printf("|              |\n");
+    printf("|              |\n");
+    printf("----------------\n");
     return a;
 }
-int obtener_datosb(int b){
-    printf ("ingre el segundo numero\n");
+int obtener_datosb(int b,int a,int signo){
+    printf("----------------\n");
+    printf("| calculadora  |\n");
+    printf("|              |\n");
+    printf("|   %d %c ",a,signo);
     scanf("%d",&b);
+    printf("|              |\n");
+    printf("|              |\n");
+    printf("|              |\n");
+    printf("----------------\n");
     return b; 
 }
 int menucalculadora(int a,char signo,int b,int resultado){
     printf("----------------\n");
     printf("| calculadora  |\n");
     printf("|              |\n");
-    printf("|  %d %c %d = %d   |\n",a,signo,b,resultado);
+    printf("|  %d %c %d = %d   \n",a,signo,b,resultado);
     printf("|              |\n");
     printf("|              |\n");
     printf("----------------\n");

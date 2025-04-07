@@ -15,31 +15,31 @@ int main(void){
         scanf("%d",&opcion);
         if (opcion == 1)
         {
-          a=obtener_datosa(a);
-          b=obtener_datosb(b);
-            int resultado=suma(a,b);
             signo='+';
+            a=obtener_datosa(a);
+            b=obtener_datosb(b,a,signo);
+            int resultado=suma(a,b);
             printf(menucalculadora(a,signo,b,resultado));
         }else if (opcion == 2)
         {
-            a=obtener_datosa(a);
-            b=obtener_datosb(b);
-            int resultado=resta(a,b);
             signo='-';
-            printf(menucalculadora(a,signo,b,resultado));
+            a=obtener_datosa(a);
+            b=obtener_datosb(b,a,signo);
+            int resultado=resta(a,b);
+            printf(menucalculadora(a,signo,b,resultado));   
         }else if (opcion == 3)
         {
-            a=obtener_datosa(a);
-            b=obtener_datosb(b);
-            int resultado=multiplicacion(a,b);
             signo='x';
+            a=obtener_datosa(a);
+            b=obtener_datosb(b,a,signo);
+            int resultado=multiplicacion(a,b);
             printf(menucalculadora(a,signo,b,resultado));
         }else if (opcion == 4)
         {
-            a=obtener_datosa(a);
-            b=obtener_datosb(b);
-            int resultado=division(a,b);
             signo='/';
+            a=obtener_datosa(a);
+            b=obtener_datosb(b,a,signo);
+            int resultado=division(a,b);
             printf(menucalculadora(a,signo,b,resultado));
         } 
     }
